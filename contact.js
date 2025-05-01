@@ -1,20 +1,21 @@
-// offer bar
-var offer__x = document.getElementById("offer__x")
-var offerbar = document.querySelector(".offerbar")
+// Offer bar close
+const offerCloseBtn = document.getElementById("offer__x");
+const offerBar = document.querySelector(".offerbar");
 
-offer__x.addEventListener("click",function(){
-    offerbar.style.display="none"
-})
+offerCloseBtn.addEventListener("click", () => {
+  offerBar.style.display = "none";
+});
 
-// side nav bar
-var sidenavbar = document.querySelector(".sidenavbar")
-var siedenav__X = document.getElementById("sidenav__X")
-var menubar__menu = document.getElementById("menubar__menu")
+// Side navbar toggle
+const sidenavbar = document.querySelector(".sidenavbar");
+const sidenavCloseBtn = document.getElementById("sidenav__X");
+const menuIcon = document.getElementById("menubar__menu");
 
-menubar__menu.addEventListener("click",function(){
-    console.log("Menu icon clicked!");
-    sidenavbar.style.left = "0px"
-})
-siedenav__X.addEventListener("click",function(){
-    sidenavbar.style.left = "-70%"
-})
+menuIcon.addEventListener("click", () => {
+  console.log("Menu icon clicked!");
+  sidenavbar.style.left = "0px";
+});
+
+sidenavCloseBtn.addEventListener("click", () => {
+  sidenavbar.style.left = "-70%";
+});
