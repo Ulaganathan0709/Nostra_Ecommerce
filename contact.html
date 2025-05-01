@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="icon" href="./images/products/titlelogo.webp" type="image/png">
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="style.css">
+    <!--Tailwind css-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!--Googlefont link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+        <!--Offer Bar-->
+        <div class="offerbar bg-black text-white p-1 md:p-2 text-center"> <!--offerbar is classname , not tailwind-->
+            <p class="text-xs md:text-2xl">Sign Up and <b>GET 20% OFF</b> for your first Order
+                <i id="offer__x"
+                    class="fa-solid fa-xmark pl-20 cursor-pointer"></i><!--fa-solid fa-xmark is X icon , not tailwind-->
+            </p>
+        </div>
+     <!--Navigation Bar-->
+     <nav class="navbar">
+        <div class="flex justify-between items-center p-5"><!--navbar is classname , not tailwind-->
+            <h2 class="text-2xl font-bold">Nostra</h2>
+            <div class="nav-link hidden md:flex"> <!--nav-link is classname , not tailwind-->
+                <p class="navbarlik pr-14 hover:underline cursor-pointer"><a href="index.html">Home</a></p>
+                <!--navlinkbar is classname , not tailwind-->
+                <p class="navbarlik pr-14 hover:underline cursor-pointer"><a href="#">New Arrival</a></p>
+                <p class="navbarlik pr-14 hover:underline cursor-pointer"><a href="#">Most Wanted</a></p>
+                <p class="navbarlik pr-14 hover:underline cursor-pointer"><a href="collections.html">Collections</a></p>
+                <p class="navbarlik pr-14 hover:underline cursor-pointer"><a href="#">Contact Us</a></p>
+            </div>
+            <div class="menubar md:hidden">
+                <i id="menubar__menu" class="fa-solid fa-bars cursor-pointer"></i>
+            </div>
+        </div>
+    </nav>
+    <!--Side Nav bar-->
+    <div class="sidenavbar">
+        <div class="side-X">
+            <i id="sidenav__X" class="fa-solid fa-xmark "></i>
+        </div>
+        <div class="sidenav-list">
+            <p class="sidenavbarlink"><a href="index.html"></a>Home</p>  <!--navlinkbar is classname , not tailwind-->
+            <p class="sidenavbarlink"><a href="#new-arrival">New Arrival</a></p>
+            <p class="sidenavbarlink"><a href="#most-wanted">Most Wanted</a></p>
+            <p class="sidenavbarlink"><a href="collections.html">Collections</a></p>
+            <p class="sidenavbarlink"><a href="contact.html">Contact Us</a></p>
+        </div>
+    </div>
+    <!--contact-->
+    <div class="contact">
+        <div class="contact-container">
+            <h1>Contact</h1>
+            <div class="namee">
+                <label for="name">Name</label>
+                <input type="type" id="namee-input" name="name" required>
+            </div>
+
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email-input" name="email" required>
+            </div>
+
+            <div class="message">
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" required>
+            </div>
+            
+                <button class="contact-btn">Submit</button>
+            
+        </div>
+    </div>
+    <!--Join our News Letter-->
+    <div class="newsletter text-center mt-20 mb-10">
+        <h1 class="text-sm md:text-5xl font-bold">Join our News Letter</h1>
+        <p class="text-sm md:text-3xl mt-4">Signup for our email newspaper to get exclusive discounts, updates, and
+            more</p>
+        <input type="text">
+        <button class="bg-gray-800 text-white p-1 md:p-4 rounded-lg text-xl">Subscribe<i
+                class="fa-solid fa-arrow-right md:ml-3"></i></button>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+        <h1>Nostra</h1>
+        <h2>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</h2>
+        <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+        <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+        <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+        <p>&copy;2025 Nostra.com</p>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>
